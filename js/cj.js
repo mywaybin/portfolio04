@@ -30,7 +30,7 @@ $(function () {
     $('.main_pro_slide').slick({
         arrows: false,
         dots: true,
-        slidesToShow: 5,
+        slidesToShow: 4,
     });
 
     $('.mainProduct .arrows .Prev').on('click', function () {
