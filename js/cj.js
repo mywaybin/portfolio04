@@ -29,16 +29,8 @@ $(function () {
 
     $('.main_pro_slide').slick({
         arrows: false,
-        dots: true,
-        slidesToShow: 4,
-    });
-
-    $('.mainProduct .arrows .Prev').on('click', function () {
-        $('.main_pro_slide').slick('slickPrev')
-    });
-
-    $('.mainProduct .arrows .Next').on('click', function () {
-        $('.main_pro_slide').slick('slickNext')
+        dots: false,
+        slidesToShow: 3,
     });
 
 })
