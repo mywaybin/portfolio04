@@ -451,7 +451,6 @@
 .mainBrand .inner {
     width: 1200px;
     margin: 0 auto;
-
 }
 
 .mainBrand h3 {
@@ -461,14 +460,6 @@
     text-align: center;
     color: #444444;
     position: relative;
-}
-
-.mainBrand p {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0 0 30px 0;
-    text-align: center;
-    line-height: 26px;
 }
 
 .mainBrand>a {
@@ -537,7 +528,7 @@
     font-weight: 400;
     margin: 0 0 30px 0;
     text-align: center;
-    line-height: 20px;
+    line-height: 26px;
 }
 
 .mainBrand .inner figure {
@@ -740,22 +731,6 @@
     height: 50px;
 }
 
-
-
-.mainNews {
-    padding: 100px 0;
-}
-
-.mainNews h2 {
-    position: relative;
-    font-size: 40px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-    text-align: center;
-    color: #444444;
-    position: relative;
-}
-
 .mainMap h2 ::after {
     content: "";
     position: absolute;
@@ -767,14 +742,42 @@
     background: rgb(255, 0, 0);
 }
 
-.mainNews>p {
+
+
+
+.mainIcon {
+    padding: 100px 0;
+}
+
+.mainIcon h2 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: #444444;
+    position: relative;
+}
+
+.mainIcon h2::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 70px;
+    top: -100px;
+    left: 50%;
+    right: 0;
+    background: rgb(255, 0, 0);
+}
+
+.mainIcon>p {
     font-size: 18px;
     font-weight: 400;
     margin: 0 0 60px 0;
     text-align: center;
 }
 
-.mainNews .inner {
+.mainIcon .inner {
     display: flex;
     gap: 60px;
     width: 1200px;
@@ -782,12 +785,12 @@
     text-align: center;
 }
 
-.mainNews .inner>div {
+.mainIcon .inner>div {
     position: relative;
     flex: 1;
 }
 
-.mainNews .inner>div~div::before {
+.mainIcon .inner>div~div::before {
     content: "";
     position: absolute;
     top: ;
@@ -797,28 +800,74 @@
     background: #ddd;
 }
 
-.mainNews .itm {
+.mainIcon .itm {
     display: flex;
     flex-direction: column;
     line-height: 1.4;
     word-break: keep-all;
 }
 
-.mainNews .itm h3 {
+.mainIcon .itm h3 {
     font-size: 20px;
     font-weight: 500;
     min-height: 70px;
 }
 
-.mainNews .itm p {
+.mainIcon .itm p {
     max-height: 65px;
     overflow: hidden;
     margin: 0 0 60px 0;
 }
 
+.mainIcon .inner span {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+}
 
+.mainIcon .inner a {
+    color: #fff;
+    text-align: center;
+    left: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
 
+.mainIcon .inner span:hover {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 50%;
+    border-top: 1px solid rgb(255, 0, 0);
+    border-bottom: 1px solid rgb(255, 0, 0);
+    border-left: 1px solid rgb(255, 0, 0);
+    border-right: 1px solid rgb(255, 0, 0);
+}
 
+.mainIcon .inner a:hover {
+    color: rgb(255, 0, 0);
+    left: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#toTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    display: none;
+}
+
+#toTop i {
+    background: rgb(255, 0, 0);
+    color: white;
+    font-size: 26px;
+    padding: 15px;
+}
 
 .footer {
     background: rgba(245, 245, 245);

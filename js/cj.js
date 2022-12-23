@@ -33,6 +33,23 @@ $(function () {
         slidesToShow: 3,
     });
 
+    $(function () {
+        $(window).on('scroll', function () {
+            var scr = $(window).scrollTop(); // 스크롤 값을 구함
+            if (scr > 300) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+            //scr > 300 ? $('#toTop').fadeIn() : $('#toTop').fadeOut()
+
+        });
+
+        $('#toTop').on('click', function () {
+            $('html, body').animate({ scrollTop: 0 }, 2000)
+        })
+    })
+
 })
 
 //tab menu
